@@ -3,93 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1 - Biografía</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Página 1 - Usain Bolt</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1b1b1b, #444);
+            color: white;
+        }
+
+        /* Título */
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px #00ff6a;
+        }
+
+        /* Contenedor */
+        .content {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Biografía */
+        .bio-box {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 0 20px #00ff6a55;
+        }
+
+        /* TABLA */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: #111;
+            box-shadow: 0 0 15px #00ff6a66;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #00ff6a;
+            color: #000;
+            padding: 12px;
+            font-size: 1.2rem;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { background: #00ff6a; }
+            100% { background: #00c94d; }
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #00ff6a55;
+        }
+
+        tr:hover {
+            background: #00ff6a33;
+        }
+
+        /* Iconos sociales */
+        .social {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .social a {
+            font-size: 40px;
+            margin: 0 15px;
+            display: inline-block;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+
+        .social a:hover {
+            transform: scale(1.3) rotate(10deg);
+            color: #00ff6a;
+            text-shadow: 0 0 15px #00ff6a;
+        }
+
+        /* Botón PDF */
+        .pdf-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background: #00ff6a;
+            color: #000;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .pdf-btn:hover {
+            background: #00c94d;
+            box-shadow: 0 0 20px #00ff6a;
+        }
+
+        /* Botón volver */
+        .back {
+            margin-top: 40px;
+            display: block;
+            text-align: center;
+        }
+
+        .back a {
+            padding: 10px 20px;
+            background: #00ff6a;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .back a:hover {
+            background: #00c94d;
+            box-shadow: 0 0 20px #00ff6a;
+        }
+
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Biografía</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="pagina1.html">Página 1</a>
-            <a href="pagina2.html">Página 2</a>
-            <a href="pagina3.html">Página 3</a>
-        </nav>
-    </header>
+    <h1>Usain Bolt – Biografía</h1>
 
-    <main>
+    <div class="content">
 
         <!-- BIOGRAFÍA -->
-        <section>
-            <h2>Sobre mí</h2>
+        <div class="bio-box">
+            <h2>Biografía</h2>
             <p>
-                Mi nombre es Pedro Daniel. Soy un estudiante apasionado por la informática, el desarrollo web 
-                y la tecnología. Me gusta aprender nuevas herramientas, crear proyectos funcionales y 
-                mejorar mis habilidades día a día. Esta página forma parte de mi trabajo práctico para la 
-                materia de informática.
+                Usain St. Leo Bolt (n. 1986) es un ex atleta jamaiquino considerado el hombre más rápido de la historia.
+                Especialista en pruebas de 100 y 200 metros, obtuvo ocho medallas olímpicas de oro y once títulos mundiales.
+                Su carisma, velocidad y dominio total del atletismo lo convirtieron en una leyenda global del deporte.
             </p>
-        </section>
+        </div>
 
         <!-- TABLA DE CARRERA -->
-        <section>
-            <h2>Mi carrera y logros</h2>
+        <h2 style="margin-top: 35px;">Carrera Deportiva</h2>
 
-            <table class="tabla-carrera">
-                <tr>
-                    <th>Año</th>
-                    <th>Actividad</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>2020</td>
-                    <td>Inicio de estudios</td>
-                    <td>Comencé a interesarme por la programación y la tecnología.</td>
-                </tr>
-                <tr>
-                    <td>2021</td>
-                    <td>Primeros proyectos</td>
-                    <td>Realicé pequeñas páginas web y prácticas escolares.</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>Avances en Python</td>
-                    <td>Trabajé con bases de datos y proyectos personales.</td>
-                </tr>
-                <tr>
-                    <td>2023</td>
-                    <td>Proyectos avanzados</td>
-                    <td>Desarrollo de aplicaciones CRUD y conexión a PostgreSQL.</td>
-                </tr>
-                <tr>
-                    <td>2024</td>
-                    <td>Especialización</td>
-                    <td>Profundizando en interfaces gráficas y desarrollo web.</td>
-                </tr>
-            </table>
-        </section>
+        <table>
+            <tr>
+                <th>Año</th>
+                <th>Evento</th>
+                <th>Logro</th>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>Juegos Olímpicos Beijing</td>
+                <td>3 Medallas de Oro (100m, 200m, 4×100)</td>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td>Mundial de Berlín</td>
+                <td>Récord mundial 9.58s (100m) y 19.19s (200m)</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>Juegos Olímpicos Londres</td>
+                <td>Triple Oro, repitiendo dominio absoluto</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>Mundial de Pekín</td>
+                <td>Dos oros (100m, 200m)</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Juegos Olímpicos Río</td>
+                <td>Triple Oro nuevamente (100m, 200m, 4×100)</td>
+            </tr>
+        </table>
 
-        <!-- CONTACTO -->
-        <section>
-            <h2>Contacto</h2>
-            <p>Puedes encontrarme en mis redes sociales:</p>
+        <!-- ICONOS SOCIALES -->
+        <div class="social">
+            <h2>Síguelo en redes</h2>
 
-            <div class="iconos">
+            <!-- ICONOS USANDO UNICODE + ANIMACIÓN -->
+            <a href="https://twitter.com" target="_blank">🐦</a>
+            <a href="https://instagram.com" target="_blank">📸</a>
+            <a href="https://facebook.com" target="_blank">📘</a>
+            <a href="https://youtube.com" target="_blank">▶️</a>
+        </div>
 
-                <a href="https://facebook.com" target="_blank" class="icono fb">F</a>
-                <a href="https://instagram.com" target="_blank" class="icono ig">I</a>
-                <a href="https://twitter.com" target="_blank" class="icono tw">T</a>
-                <a href="curriculum.pdf" target="_blank" class="cv">📄 Ver Currículum</a>
+        <!-- PDF -->
+        <a href="curriculum_usain_bolt.pdf" class="pdf-btn" target="_blank">Ver Currículum PDF</a>
 
-            </div>
-        </section>
+        <!-- VOLVER -->
+        <div class="back">
+            <a href="index.html">Volver al Inicio</a>
+        </div>
 
-    </main>
-
-    <footer>
-        <p>Creado por: <strong>Pedro Daniel</strong> — Fecha: <strong>13/11/2025</strong></p>
-    </footer>
+    </div>
 
 </body>
 </html>
+
 
