@@ -281,29 +281,49 @@ tbody tr:nth-child(odd) { background-color: #ffffff; }
     line-height: 1.6;
 }
 
-/* Botón Leer más */
+/* Botón Leer Más creativo */
 .leer-mas {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 18px;
-    background-color: #0053a6;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #0053a6, #00aaff, #0053a6);
+    background-size: 200% 200%;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: bold;
-    transition: 0.3s;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,83,166,0.4);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Animación de gradiente */
 .leer-mas:hover {
-    background-color: #003d7a;
-    transform: scale(1.05);
+    background-position: right center;
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,83,166,0.6);
 }
 
-/* Animación al aparecer */
-.paso.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* Efecto brillante al pasar el cursor */
+.leer-mas::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    transform: skewX(-25deg);
+    transition: all 0.7s;
 }
+
+.leer-mas:hover::after {
+    left: 125%;
+}
+
+
 
 
 
