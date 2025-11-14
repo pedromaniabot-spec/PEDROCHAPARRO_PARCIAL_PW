@@ -1,71 +1,64 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* Contenedor de botones */
+.botones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-header h1 {
-    animation: aparecer 2s ease-in-out;
-}
-
-header {
+/* Estilo general */
+.btn {
+    padding: 15px 25px;
+    color: white;
     background-color: #0078d7;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-nav a {
-    color: white;
     text-decoration: none;
-    margin: 0 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
     font-weight: bold;
-    transition: color 0.3s, transform 0.3s; 
+    transition: transform 0.3s ease;
 }
 
-nav a:hover {
-    color: #ffdf00;
-    transform: scale(1.1); 
+/* Botón 1 – Zoom */
+.b1:hover {
+    transform: scale(1.2);
+    background-color: #005bb5;
+}
+
+/* Botón 2 – Movimiento izquierdo/derecha */
+.b2 {
+    animation: mover 2s infinite alternate;
+}
+@keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(10px); }
+}
+
+/* Botón 3 – Rebote */
+.b3:hover {
+    animation: rebote 0.5s;
+}
+@keyframes rebote {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+/* Botón 4 – Parpadeo */
+.b4 {
+    animation: parpadeo 1s infinite;
+}
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Botón 5 – Giro */
+.b5:hover {
+    transform: rotate(10deg) scale(1.1);
+    background-color: #005bb5;
 }
 
 
-main {
-    padding: 20px;
-}
-
-section, article {
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-section:hover, article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
