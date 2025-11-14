@@ -200,6 +200,96 @@ footer {
     background: #444;
 }
 
+/* ------------------------- */
+/* PÁGINA 1 – NUEVOS ESTILOS */
+/* ------------------------- */
+
+/* Caja de biografía */
+.bio-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+}
+
+/* Títulos */
+h2 {
+    color: #0078d7;
+    margin-top: 20px;
+}
+
+/* Tabla más llamativa (mejora tu tabla-carrera existente) */
+.tabla-carrera {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,120,215,0.4);
+}
+
+/* Iconos sociales más creativos */
+.iconos {
+    margin-top: 25px;
+    display: flex;
+    gap: 18px;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 12px;
+    background: #0078d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.icono:hover {
+    transform: scale(1.15) rotate(6deg);
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+/* Botón PDF */
+.cv {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0078d7;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cv:hover {
+    background: #005bb5;
+    box-shadow: 0 0 12px rgba(0,120,215,0.4);
+}
+
+/* Botón volver */
+.volver {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.volver a {
+    padding: 10px 20px;
+    background: #0078d7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.volver a:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+
 
 
 
