@@ -254,10 +254,6 @@ tbody tr:nth-child(odd) { background-color: #ffffff; }
    ESTILOS PARA PÁGINA 3
    ============================ */
 
-/* ============================
-   ESTILOS PARA PÁGINA 3
-   ============================ */
-
 /* Artículos de pasos de carrera */
 .paso {
     background-color: white;
@@ -308,6 +304,7 @@ tbody tr:nth-child(odd) { background-color: #ffffff; }
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 
