@@ -3,83 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1 - Usain Bolt</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Biografía de Usain Bolt</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-    <h1>Usain Bolt – Biografía</h1>
+    <header>
+        <h1>Usain Bolt: El Hombre Más Rápido del Mundo</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Página 1</a>
+            <a href="pagina2.html">Página 2</a>
+            <a href="pagina3.html">Página 3</a>
+            <a href="pagina4.html">Biografía</a>
+        </nav>
+    </header>
 
-    <div class="content">
-
+    <main>
         <!-- BIOGRAFÍA -->
-        <div class="bio-box">
+        <section class="biografia">
             <h2>Biografía</h2>
             <p>
-                Usain St. Leo Bolt (n. 1986) es un ex atleta jamaiquino considerado el hombre más rápido de la historia.
-                Especialista en pruebas de 100 y 200 metros, obtuvo ocho medallas olímpicas de oro y once títulos mundiales.
-                Su carisma, velocidad y dominio total del atletismo lo convirtieron en una leyenda global del deporte.
+                Usain St. Leo Bolt, nacido el 21 de agosto de 1986 en Sherwood Content, Jamaica, es considerado el 
+                hombre más rápido de la historia. Desde joven mostró un talento excepcional en el atletismo, 
+                destacando en carreras de 100 m y 200 m. Bolt es ocho veces campeón olímpico y 11 veces campeón mundial, 
+                ostentando récords mundiales en 100 m, 200 m y 4x100 m. Su carisma, estilo único y celebraciones 
+                memorables lo han convertido en un ícono global del deporte.
             </p>
-        </div>
+        </section>
 
-        <!-- TABLA DE CARRERA -->
-        <h2 class="section-title">Carrera Deportiva</h2>
+        <!-- CARRERA -->
+        <section class="carrera">
+            <h2>Tabla de su Carrera</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Competición</th>
+                        <th>Medalla / Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2008</td>
+                        <td>Juegos Olímpicos Beijing</td>
+                        <td>Oro 100 m, 200 m, 4x100 m</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>Mundial Berlín</td>
+                        <td>Oro 100 m, 200 m</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Juegos Olímpicos Londres</td>
+                        <td>Oro 100 m, 200 m, 4x100 m</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>Mundial Moscú</td>
+                        <td>Oro 100 m, 200 m, 4x100 m</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Juegos Olímpicos Río</td>
+                        <td>Oro 100 m, 200 m, 4x100 m</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <table>
-            <tr>
-                <th>Año</th>
-                <th>Evento</th>
-                <th>Logro</th>
-            </tr>
-            <tr>
-                <td>2008</td>
-                <td>Juegos Olímpicos Beijing</td>
-                <td>3 Medallas de Oro (100m, 200m, 4×100)</td>
-            </tr>
-            <tr>
-                <td>2009</td>
-                <td>Mundial de Berlín</td>
-                <td>Récord mundial 9.58s (100m) y 19.19s (200m)</td>
-            </tr>
-            <tr>
-                <td>2012</td>
-                <td>Juegos Olímpicos Londres</td>
-                <td>Triple Oro, repitiendo dominio absoluto</td>
-            </tr>
-            <tr>
-                <td>2015</td>
-                <td>Mundial de Pekín</td>
-                <td>Dos oros (100m, 200m)</td>
-            </tr>
-            <tr>
-                <td>2016</td>
-                <td>Juegos Olímpicos Río</td>
-                <td>Triple Oro nuevamente (100m, 200m, 4×100)</td>
-            </tr>
-        </table>
+        <!-- CONTACTO -->
+        <section class="contacto">
+            <h2>Contacto y Redes Sociales</h2>
+            <div class="iconos">
+                <a href="https://twitter.com/usainbolt" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/usainbolt/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/usainbolt" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="curriculum.pdf" target="_blank" class="pdf"><i class="fas fa-file-pdf"></i> Currículo</a>
+            </div>
+        </section>
+    </main>
 
-        <!-- ICONOS SOCIALES -->
-        <div class="social">
-            <h2>Síguelo en redes</h2>
-
-            <a href="https://twitter.com" target="_blank">🐦</a>
-            <a href="https://instagram.com" target="_blank">📸</a>
-            <a href="https://facebook.com" target="_blank">📘</a>
-            <a href="https://youtube.com" target="_blank">▶️</a>
-        </div>
-
-        <!-- PDF -->
-        <a href="curriculum_usain_bolt.pdf" class="pdf-btn" target="_blank">Ver Currículum PDF</a>
-
-        <!-- VOLVER -->
-        <div class="back">
-            <a href="index.html">Volver al Inicio</a>
-        </div>
-
-    </div>
+    <footer>
+        <p>Creado por: <strong>Pedro Daniel</strong> — Fecha: <strong>13/11/2025</strong></p>
+    </footer>
 
 </body>
 </html>
+
 
 
