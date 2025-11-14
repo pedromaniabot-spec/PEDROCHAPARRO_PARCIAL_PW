@@ -200,9 +200,6 @@ footer {
     background: #444;
 }
 
-/* ------------------------- */
-/* PÁGINA 1 – NUEVOS ESTILOS */
-/* ------------------------- */
 
 /* Caja de biografía */
 .bio-box {
@@ -288,6 +285,7 @@ h2 {
     background: #005bb5;
     transform: scale(1.1);
 }
+
 
 
 
