@@ -1,121 +1,135 @@
-/* ------------------------- */
-/* ESTILO GENERAL            */
-/* ------------------------- */
-
+/* ESTILO GENERAL */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #eef2f3, #dfe9f3);
-    color: #333;
 }
 
-/* ------------------------- */
-/* ENCABEZADO                */
-/* ------------------------- */
-
+/* ENCABEZADO */
 header {
-    background: #004d99;
+    background-color: #0078d7;
     color: white;
-    padding: 25px 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-    letter-spacing: 2px;
+    animation: aparecer 2s ease-in-out;
 }
 
-/* ------------------------- */
-/* MENÚ DE NAVEGACIÓN        */
-/* ------------------------- */
-
-nav {
-    margin-top: 15px;
-}
-
+/* MENÚ DE NAVEGACIÓN */
 nav a {
-    text-decoration: none;
     color: white;
-    margin: 0 15px;
-    padding: 8px 16px;
-    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 12px;
     font-weight: bold;
-    transition: 0.3s ease;
-    background: rgba(255, 255, 255, 0.15);
+    transition: color 0.3s, transform 0.3s; 
 }
 
 nav a:hover {
-    background: white;
-    color: #004d99;
-    transform: scale(1.1);
+    color: #ffdf00;
+    transform: scale(1.1); 
 }
 
-/* ------------------------- */
-/* CONTENIDO PRINCIPAL       */
-/* ------------------------- */
-
+/* CONTENIDO */
 main {
-    padding: 25px;
+    padding: 20px;
 }
 
 section {
-    background: white;
+    background-color: white;
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: #004d99;
-    letter-spacing: 1px;
-}
-
-/* ------------------------- */
-/* BOTONES ANIMADOS          */
-/* ------------------------- */
-
+/* BOTONES */
 .botones {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-around;
 }
 
 .btn {
     padding: 15px 25px;
-    background: #0078ff;
+    background-color: #0078d7;
     color: white;
-    border-radius: 12px;
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 17px;
+    margin: 10px;
     font-weight: bold;
-    transition: 0.3s ease-out;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 18px;
+    transition: 0.3s ease;
 }
 
-/* Animaciones bonitas pero seguras */
-.b1:hover { transform: scale(1.15); background: #005fcc; }
-.b2:hover { transform: translateY(-6px); background: #005fcc; }
-.b3:hover { transform: rotate(3deg) scale(1.08); background: #005fcc; }
-.b4:hover { box-shadow: 0 0 15px #0078ff; }
-.b5:hover { letter-spacing: 2px; background: #005fcc; }
+/* BOTÓN 1: ZOOM */
+.b1:hover {
+    transform: scale(1.2);
+}
 
-/* ------------------------- */
-/* PIE DE PÁGINA             */
-/* ------------------------- */
+/* BOTÓN 2: MOVIMIENTO LATERAL */
+.b2 {
+    animation: mover 1.8s infinite alternate;
+}
 
+@keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(12px); }
+}
+
+/* BOTÓN 3: REBOTE */
+.b3:hover {
+    animation: rebote 0.5s;
+}
+
+@keyframes rebote {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+/* BOTÓN 4: PARPADEO */
+.b4 {
+    animation: parpadeo 1.2s infinite;
+}
+
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: .5; }
+    100% { opacity: 1; }
+}
+
+/* BOTÓN 5: ROTACIÓN */
+.b5:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* PIÉ DE PÁGINA */
 footer {
-    background: #00264d;
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-size: 14px;
+    padding: 12px 0;
+    margin-top: 20px;
 }
+
+/* ANIMACIÓN DEL TÍTULO */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 
 
